@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: left;
+  background-image: linear-gradient(rgba(51, 49, 49, 0.75),rgba(51, 49, 49, 0.75)),url(background.png);
+  background-position: center;
+  background-size: cover;
+  color: #f2f2f2;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: #f2f2f2;
+
+}
+.logo {
+  float:left ;
+  position:  center;
+  width: 100px;
+  height: 100%;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav.active a{
+  background-color:  #fff;
+          color: #000;
+}
+.column
+ {   
+  float: left;
+  width: 50%;
+}
+button{
+  width: 180px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 15px 0;
+  background: rgb(126, 119, 119);
+  border:0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 20px;
+  margin-left: 5%;
+  transform: translate(-10%,-15%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pics{
+                width: 200px;
+                height: 230px;
+                display: inline-block;
+                border-radius: 10px;
+                padding:  5px 5px;
+                margin: 5px 5px;
+                background-position: center;
+                background-size: cover;
+                transition:transform 0.5s;                
+                color: #fff;
+            }
+            .p1{   
+                background-image: url(p1.jpg);
+                color: #000;
+
+            }
+            .p2{ 
+                background-image: url(p2.jpg);
+            }
+            .p3{   
+                background-image: url(p3.jpeg);
+            }
+            .p4{   
+                background-image: url(p4.jpeg);
+            }
+            .p5{   
+  background-image: url(p5.jpeg);
+}
+.p6{   
+  background-image: url(p6.jpeg);
+}
+h5{
+  text-shadow: 0 0 5px #999;
+}
+.pics:hover{
+  transform: translateY(-10px);
+}
+
+.content {
+  background-color: rgb(223, 219, 219);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: justify;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(51, 49, 49, 0.75),rgba(51, 49, 49, 0.75)),url(background.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+  color:#fff
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" class="logo">
+  <h1>BirdWatching</h1>
+</div>
+
+<div class="topnav">
+  <div class="active">
+    <a href="#">Home</a>
+  </div>
+  <a href="#">Get Started</a>
+  <a href="#">Photos</a>
+  <a href="#"style="float:right">About Us</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <h2>Welcome</h2>
+      <p>Welcome to our Bird Watching site.<br>
+        We're so glad you're here! <br><br>
+        Birds Watching can also be defined as what we called "Birds Eye Perspective"<br>
+        where we creating a view as if the observer were a bird in flight looking forwards. <br><br>
+        People cannot fly in their own compared to the literal birds,<br> but we can see 
+        ahead of our present - it is to sight the future by making a bird's view.<br><br>
+        By choosing our website, you're now part of a small community of individual <br>who read, 
+        listen, share, communicate with others all over our country via Birds Watching.<br>
+        Whether you've joined to create,  share,  listen  or  engage to the others stories, <br>
+        we've got something for you! </p>
+        <button type="button">Get Started
+        </button>
+</div>
+    </div>
+    <div class="content">
+      <br>
+      <h2>Photos</h2>
+      <div class="pics p1">
+          <h5>Graduate</h5>
+      </div>
+          <div class="pics p2">
+      <h5>Rest</h5>
+          </div>
+      <div class="pics p3">
+          <h5>Success</h5>
+      </div>
+      <div class="pics p4">
+          <h5>Peace</h5>
+      </div>
+      <div class="pics p5">
+         <h5>Loved</h5>
+      </div>
+      <div class="pics p6">
+          <h5>Healthy</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>About Us</h2>
+  &copy; <a href=https://www.pexels.com style="color:bisque">Photos</a> by Pexel <br>
+  Author: Jelie Mae Bunao<br>
+  <a href="mailto:jeliebunao143@gmail.com" style="color: rgb(120, 179, 247)"> jeliebunao143@gmail</a>
+</div>
+
+</body>
+</html>
